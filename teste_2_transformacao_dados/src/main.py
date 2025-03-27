@@ -13,7 +13,7 @@ def main():
 
     try:
 
-        print("Extraindo dados do PDF...")
+        print("Extraindo dados do PDF...")  
         df = extract_table_from_pdf(input_pdf)
         
 
