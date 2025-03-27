@@ -12,6 +12,7 @@ teste_1_web_scraping/
 │   ├── data/          # Diretório para armazenamento de dados
 │   └── main.py        # Arquivo principal do programa
 └── .gitignore
+└── requirements
 ```
 
 ## Funcionalidades
