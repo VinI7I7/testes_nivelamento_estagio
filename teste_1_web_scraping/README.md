@@ -18,9 +18,9 @@ teste_1_web_scraping/
 ## Funcionalidades
 
 - Download automático de PDFs de uma fonte web
-- Compressão dos PDFs baixados
-- Tratamento de erros e exceções
-- Feedback do processo em tempo real
+- Compactção dos PDFs baixados
+- Tratamento de erros 
+
 
 ## Requisitos
 
