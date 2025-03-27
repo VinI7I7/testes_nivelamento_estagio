@@ -8,18 +8,19 @@ Este projeto realiza web scraping de PDFs do site da ANS (Agência Nacional de S
 ```
 teste_1_web_scraping/
 ├── src/
-│   ├── utils/         # Utilitários paradownload e compressão
+│   ├── utils/         # Utilitários para download e compressão
 │   ├── data/          # Diretório para armazenamento de dados
 │   └── main.py        # Arquivo principal do programa
 └── .gitignore
+└── requirements
 ```
 
 ## Funcionalidades
 
 - Download automático de PDFs de uma fonte web
-- Compressão dos PDFs baixados
-- Tratamento de erros e exceções
-- Feedback do processo em tempo real
+- Compactção dos PDFs baixados
+- Tratamento de erros 
+
 
 ## Requisitos
 
