@@ -2,9 +2,9 @@ import os
 import zipfile
 
 def compress_pdfs():
-    base_dir = os.path.dirname(os.path.abspath(__file__))  
-    data_folder = os.path.join(base_dir, '..', 'data')  
-    zip_filename = os.path.join(data_folder, 'anexos.zip')  
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+    data_folder = os.path.join(base_dir, 'data')
+    zip_filename = os.path.join(data_folder, 'anexos.zip')
 
     if not os.path.exists(data_folder):
         print("Erro: A pasta 'data' não existe. Certifique-se de que ela foi criada antes de compactar.")
