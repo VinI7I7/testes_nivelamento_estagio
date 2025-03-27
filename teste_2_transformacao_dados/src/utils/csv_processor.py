@@ -30,6 +30,6 @@ def process_and_save_csv(df, output_path):
     df.to_csv(output_path, 
               index=False, 
               encoding='utf-8-sig',  
-              sep=';',  
+              sep=',',  
               quoting=1,  
               lineterminator='\n')  
