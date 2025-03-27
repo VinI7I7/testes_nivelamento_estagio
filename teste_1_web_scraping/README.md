@@ -9,7 +9,6 @@ Este projeto realiza web scraping de PDFs do site da ANS (Agência Nacional de S
 teste_1_web_scraping/
 ├── src/
 │   ├── utils/         # Utilitários para download e compressão
-│   ├── data/          # Diretório para armazenamento de dados
 │   └── main.py        # Arquivo principal do programa
 └── .gitignore
 └── requirements
