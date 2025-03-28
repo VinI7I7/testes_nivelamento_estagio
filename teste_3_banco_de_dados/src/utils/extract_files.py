@@ -8,7 +8,7 @@ EXTRACT_FOLDER = "extract_data"
 os.makedirs(EXTRACT_FOLDER, exist_ok=True)
 
 def extract_all_zips():
-    zip_filename = re.compile(r"^[1-4]T20\d{2}\.zip$")  
+    zip_filename = re.compile(r"^[1-4]T\d{4}\.zip$")  
 
     zip_files = [f for f in os.listdir(SAVE_FOLDER) if zip_filename.match(f)]
 
