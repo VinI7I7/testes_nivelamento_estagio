@@ -24,6 +24,3 @@ def process_csv():
                 output_file = os.path.join(SAVE_FOLDER, f"{file_name}")
                 print(f"Processando arquivo: {input_file}")
                 fix_csv(input_file, output_file)
-
-if __name__ == "__main__":
-    process_csv()
