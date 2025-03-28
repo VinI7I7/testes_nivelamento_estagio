@@ -40,7 +40,7 @@ def download_file(url):
         print(f"Arquivo já existe: {filename}, pulando download.")
         return
 
-    print(f"Baixando {filename}...")
+
     response = requests.get(url, stream=True)
 
     if response.status_code == 200:
@@ -70,5 +70,4 @@ def download_all_files():
             download_file(op_url)
             break 
 
-if __name__ == "__main__":
-    download_all_files()
+
