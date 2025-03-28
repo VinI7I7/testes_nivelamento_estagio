@@ -1,5 +1,5 @@
-from download_files import download_all_files
-from extract_files import extract_all_zips
+from utils.download_files import download_all_files
+from utils.extract_files import extract_all_zips
 
 def main():
     download_all_files()
