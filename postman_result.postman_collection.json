@@ -1,0 +1,390 @@
+{
+	"info": {
+		"_postman_id": "f615f307-caf7-440f-8977-83f2a74796bd",
+		"name": "postman_result",
+		"description": "Testando API de busca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43573837",
+		"_collection_link": "https://viniciusribeiro-8790146.postman.co/workspace/eba2f436-542b-4968-8401-90893f57c25f/collection/43573837-f615f307-caf7-440f-8977-83f2a74796bd?action=share&source=collection_link&creator=43573837"
+	},
+	"item": [
+		{
+			"name": "cnpj",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/search?q=27452545000195",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "27452545000195"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cnpj",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/search?q=27452545000195",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "27452545000195"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.13.2"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Mar 2025 20:40:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "747"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"query\": \"27452545000195\",\n    \"results\": [\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": 13010151,\n            \"CNPJ\": 27452545000195,\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Campinas\",\n            \"Complemento\": \"1º ANDAR\",\n            \"DDD\": 19,\n            \"Data_Registro_ANS\": \"2018-10-09\",\n            \"Endereco_eletronico\": \"ans.plano@hospitalcare.com.br\",\n            \"Logradouro\": \"RUA: BERNARDINO DE CAMPOS\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Numero\": \"230\",\n            \"Razao_Social\": \"2CARE OPERADORA DE SAÚDE LTDA.\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": 421421,\n            \"Representante\": \"RODRIGO PINHO RIBEIRO\",\n            \"Telefone\": 37901224,\n            \"UF\": \"SP\"\n        }\n    ],\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "registro_ans",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/search?q=421421",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "421421"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "registro_ans",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/search?q=421421",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "421421"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.13.2"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Mar 2025 20:32:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "739"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"query\": \"421421\",\n    \"results\": [\n        {\n            \"Bairro\": \"CENTRO\",\n            \"CEP\": 13010151,\n            \"CNPJ\": 27452545000195,\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Campinas\",\n            \"Complemento\": \"1º ANDAR\",\n            \"DDD\": 19,\n            \"Data_Registro_ANS\": \"2018-10-09\",\n            \"Endereco_eletronico\": \"ans.plano@hospitalcare.com.br\",\n            \"Logradouro\": \"RUA: BERNARDINO DE CAMPOS\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Numero\": \"230\",\n            \"Razao_Social\": \"2CARE OPERADORA DE SAÚDE LTDA.\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": 421421,\n            \"Representante\": \"RODRIGO PINHO RIBEIRO\",\n            \"Telefone\": 37901224,\n            \"UF\": \"SP\"\n        }\n    ],\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "cidade",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/search?q=Brasília",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Brasília"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "cidade",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/search?q=Brasília",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Brasília"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.13.2"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Mar 2025 20:33:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28436"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+
+					"body": "{\n    \"count\": 38,\n    \"query\": \"Brasília\",\n    \"results\": [\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70303907,\n            \"CNPJ\": 11165556000154,\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"107/111\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2010-07-16\",\n            \"Endereco_eletronico\": \"ans@allcare.com.br\",\n            \"Fax\": 30443615,\n            \"Logradouro\": \"SCS QD. 03 BLOCO A\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"ALLCARE ADMINISTRADORA DE BENEFÍCIOS EM SAÚDE\",\n            \"Numero\": \"LOTE\",\n            \"Razao_Social\": \"ALLCARE ADMINISTRADORA DE BENEFÍCIOS EM SAÚDE LTDA.\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 417459,\n            \"Representante\": \"FARIAS PEREIRA DE SOUSA \",\n            \"Telefone\": 30443600,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"Brasília\",\n            \"CEP\": 44088180,\n            \"CNPJ\": 45050963000138,\n            \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n            \"Cidade\": \"Feira de Santana\",\n            \"Complemento\": \"Sala 03\",\n            \"DDD\": 71,\n            \"Data_Registro_ANS\": \"2022-03-22\",\n            \"Endereco_eletronico\": \"bemstarhealth@gmail.com\",\n            \"Logradouro\": \"Rua Monsenhor Aderbal Miranda\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"BEMSTAR\",\n            \"Numero\": \"875\",\n            \"Razao_Social\": \"BEMSTAR ASSISTENCIA MEDICA LTDA\",\n            \"Registro_ANS\": 423181,\n            \"Representante\": \"FRANCISCO GOMES DA FONSECA FILHO\",\n            \"Telefone\": 41041808,\n            \"UF\": \"BA\"\n        },\n        {\n            \"Bairro\": \"ASA NORTE\",\n            \"CEP\": 70770901,\n            \"CNPJ\": 8097092000181,\n            \"Cargo_Representante\": \"PRESIDENTE \",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"BLOCO A\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2007-10-30\",\n            \"Endereco_eletronico\": \"presidencia@casembrapa.org.br\",\n            \"Fax\": 31810010,\n            \"Logradouro\": \"PARQUE EST. BIOL. - W3 NORTE FINAL\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"CASEMBRAPA\",\n            \"Numero\": \"S/N\",\n            \"Razao_Social\": \"CAIXA DE ASSISTÊNCIA DOS EMPREGADOS DA EMPRESA BRASILEIRA DE PESQUISA  AGROPECUÁRIA\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 416401,\n            \"Representante\": \"ALAN AUGUSTO DOS REIS\",\n            \"Telefone\": 31810010,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70610910,\n            \"CNPJ\": 33719485000127,\n            \"Cargo_Representante\": \"REPRESENTANTE JUNTO À ANS\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"---\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1998-12-29\",\n            \"Endereco_eletronico\": \"planos@cassi.com.br\",\n            \"Fax\": 33106944,\n            \"Logradouro\": \"SIG, Quadra 4, Lote \",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"CASSI\",\n            \"Numero\": \"575\",\n            \"Razao_Social\": \"CAIXA DE ASSISTÊNCIA DOS FUNCIONÁRIOS DO BANCO DO BRASIL\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 346659,\n            \"Representante\": \"WILLIAM HUANG\",\n            \"Telefone\": 32125000,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA NORTE\",\n            \"CEP\": 70830019,\n            \"CNPJ\": 3702977000149,\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"ED. MANOEL NOVAES\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2000-09-18\",\n            \"Endereco_eletronico\": \"casec@codevasf.gov.br\",\n            \"Fax\": 32231848,\n            \"Logradouro\": \"SGAN QD. 601 CONJ. I PARTE\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"CASEC\",\n            \"Numero\": \"SALA 215\",\n            \"Razao_Social\": \"CAIXA DE ASSISTÊNCIA À SAUDE DOS EMPREGADOS DA CODEVASF - CASEC\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 412295,\n            \"Representante\": \"CARLOS EDUARDO MOREIRA DOS SANTOS\",\n            \"Telefone\": 33236995,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70070050,\n            \"CNPJ\": 360305000104,\n            \"Cargo_Representante\": \"GERENTE NACIONAL\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"ED. SEDE II\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"GESAD@caixa.gov.br\",\n            \"Logradouro\": \"SAS - Q. 05 - LOTES 9/10 - 6º ANDAR\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"CAIXA\",\n            \"Numero\": \"05\",\n            \"Razao_Social\": \"CAIXA ECONÔMICA FEDERAL\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 312924,\n            \"Representante\": \"RODRIGO SANTIAGO PEREIRA\",\n            \"Telefone\": 35453773,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70305918,\n            \"CNPJ\": 17634722000109,\n            \"Cargo_Representante\": \"SÓCIO-ADMINISTRADOR\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"PARTE A1 GALERIA NOVA OUVIDOR\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2014-01-23\",\n            \"Endereco_eletronico\": \"XX@XX.XX\",\n            \"Logradouro\": \"SCS QUADRA 05 BLOCO C\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"CAPITAL ADMINISTRADORA DE BENEFÍCIOS\",\n            \"Numero\": \"LJ 168\",\n            \"Razao_Social\": \"CAPITAL ADMINISTRADORA DE BENEFÍCIOS LTDA.\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 419265,\n            \"Representante\": \"NEY BRANDÃO\",\n            \"Telefone\": 30419594,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70340902,\n            \"CNPJ\": 37161015000141,\n            \"Cargo_Representante\": \"SÓCIO-ADMINISTRADORA\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"SALAS 207/208 E 209\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1998-12-29\",\n            \"Endereco_eletronico\": \"adm@interdentaldf.com.br\",\n            \"Fax\": 613212221,\n            \"Logradouro\": \"SRTVS, QUADRA 701-CONJ. E \",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": \"INTERDENTAL\",\n            \"Numero\": \"BLOCOS 2/4\",\n            \"Razao_Social\": \"CENTRO ODONTOLOGICO INTEGRADO LTDA\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 314757,\n            \"Representante\": \"ANGELA THAISE FREIRE FERREIRA\",\n            \"Telefone\": 33212221,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70070120,\n            \"CNPJ\": 20088388000131,\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"SL 205 -  ED. CASA DE SÃO PAULO\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2014-08-04\",\n            \"Endereco_eletronico\": \"CANALANS@CLASSEADMINISTRADORA.COM.BR\",\n            \"Fax\": 38791164,\n            \"Logradouro\": \"SBS - QD 02 - BLOCO A\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"CLASSE ADMINISTRADORA\",\n            \"Numero\": \"01\",\n            \"Razao_Social\": \"CLASSE ADMINISTRADORA DE BENEFÍCIOS LTDA - ME\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 419435,\n            \"Representante\": \"FRANCISCO NOGUEIRA DA SILVA\",\n            \"Telefone\": 38791163,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"PLANO PILOTO\",\n            \"CEP\": 70390010,\n            \"CNPJ\": 26461699000180,\n            \"Cargo_Representante\": \"SUPERINT DE DESENV. DE PESSOAS\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"ASA SUL\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1999-01-05\",\n            \"Endereco_eletronico\": \"conab.gesas@conab.gov.br\",\n            \"Logradouro\": \"SGAS QUADRA 901, CONJUNTO \\\"A\\\", EDIFÍCIO \",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"COMPANHIA NACIONAL DE ABASTECIMENTO - C0NAB\",\n            \"Numero\": \"69\",\n            \"Razao_Social\": \"COMPANHIA NACIONAL DE ABASTECIMENTO - CONAB\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 334189,\n            \"Representante\": \"NILDA MARIA DOMINGOS MENDES\",\n            \"Telefone\": 33126072,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA NORTE\",\n            \"CEP\": 70712904,\n            \"CNPJ\": 34824393000170,\n            \"Cargo_Representante\": \"Administrador\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"SALAS 201 E 203\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2019-12-18\",\n            \"Endereco_eletronico\": \"siloe@ctesk.com.br\",\n            \"Logradouro\": \"Q SCN QUADRA 02, BLOCO D, ENTRADA B\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"CTESK ADMINISTRADORA DE BENEFIÍCIOS \",\n            \"Numero\": \"SN\",\n            \"Razao_Social\": \"CTESK ADMINISTRADORA DE BENEFIÍCIOS LTDA\",\n            \"Registro_ANS\": 422045,\n            \"Representante\": \"SILOÉ JOÃO DE ALMEIDA JUNIOR\",\n            \"Telefone\": 32573926,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"Asa Norte\",\n            \"CEP\": 70715900,\n            \"CNPJ\": 27252086000104,\n            \"Cargo_Representante\": \"SÓCIA-DIRETOR\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"Parte 6\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2017-12-18\",\n            \"Endereco_eletronico\": \"relacionamentoans@easyplan.com.br\",\n            \"Logradouro\": \"SCN Quadra 5, Bloco A, Ed. Brasi¿lia Sho\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"EASYPLAN ADMINISTRADORA\",\n            \"Numero\": \"Sala 217 e 218\",\n            \"Razao_Social\": \"EASYPLAN ADMINISTRADORA DE BENEFICIOS LTDA.\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 421120,\n            \"Representante\": \"ROSILANE DE ALMEIDA MORAES\",\n            \"Telefone\": 41414700,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70303000,\n            \"CNPJ\": 352294000110,\n            \"Cargo_Representante\": \"REPRESENTANTE LEGAL\",\n            \"Cidade\": \"Brasília\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1999-02-19\",\n            \"Endereco_eletronico\": \"beneficio_sede@infraero.gov.br\",\n            \"Fax\": 512,\n            \"Logradouro\": \"SCS QUADRA 3 BLOCO A/B Nº 17/18 ED. OSCA\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"INFRAERO\",\n            \"Numero\": \"17\",\n            \"Razao_Social\": \"EMPRESA BRASILEIRA DE INFRA-ESTRUTURA AEROPORTUÁRIA\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 400891,\n            \"Representante\": \"GILVANDRO VASCONCELOS COELHO DE ARAÚJO\",\n            \"Telefone\": 3222,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"CEILANDIA\",\n            \"CEP\": 72215178,\n            \"CNPJ\": 37442364000131,\n            \"Cargo_Representante\": \"Administradora \",\n            \"Cidade\": \"Brasília\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2021-03-26\",\n            \"Endereco_eletronico\": \"saudebrasilia2@gmail.com\",\n            \"Logradouro\": \"QNM 17, CONJUNTO H, LOTE 28, SALA 201\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"ESPLENDOR ADMINISTRADORA DE BENEFÍCIOS  \",\n            \"Numero\": \"S/N\",\n            \"Razao_Social\": \"ESPLENDOR ADMINISTRADORA DE BENEFÍCIOS LTDA.\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 422576,\n            \"Representante\": \"EDILAMAR LIMA DA SILVA\",\n            \"Telefone\": 982080903,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70070040,\n            \"CNPJ\": 49754083000101,\n            \"Cargo_Representante\": \"DIRETORA ADMINISTRATIVA E\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"BLOCO A,SALA 1101\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2023-09-12\",\n            \"Endereco_eletronico\": \"salgado.brunna@gmail.com\",\n            \"Logradouro\": \"QUADRA SAUS - QUADRA 4\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"EVO SAÚDE\",\n            \"Numero\": \"S/N\",\n            \"Razao_Social\": \"EVO SAUDE ASSISTENCIA MEDICA LTDA\",\n            \"Registro_ANS\": 423700,\n            \"Representante\": \"BRUNNA CERQUEIRA SALGADO LIMA\",\n            \"Telefone\": 982730004,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA NORTE\",\n            \"CEP\": 70719900,\n            \"CNPJ\": 11641931000195,\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"BLOCO P SALA 1057\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2024-03-04\",\n            \"Endereco_eletronico\": \"febrafitesaude@febrafite.org.br\",\n            \"Logradouro\": \"Q SRTVN\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"FEBRAFITE SAUDE\",\n            \"Numero\": \"QUADRA 702 \",\n            \"Razao_Social\": \"FEBRAFITE SAUDE\",\n            \"Registro_ANS\": 423777,\n            \"Representante\": \"CLEUDES CERQUEIRA DE FREITAS\",\n            \"Telefone\": 3328290733281486,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70340901,\n            \"CNPJ\": 49390919000128,\n            \"Cargo_Representante\": \"ADMINISTRADOR\",\n            \"Cidade\": \"Brasília\",\n            \"DDD\": 21,\n            \"Data_Registro_ANS\": \"2023-06-26\",\n            \"Endereco_eletronico\": \"levi@federaladm.com.br\",\n            \"Logradouro\": \"ST SRTVS QD. 701 CONJUNTO E BLOCO 3 SALA\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"FEDERAL ADMINISTRADORA DE BENEFICIOS\",\n            \"Numero\": \"S/N\",\n            \"Razao_Social\": \"FEDERAL ADMINISTRADORA DE BENEFICIOS LTDA\",\n            \"Registro_ANS\": 423581,\n            \"Representante\": \"LEVI PEREIRA FIGUEIREDO NETO\",\n            \"Telefone\": 988812666,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70304908,\n            \"CNPJ\": 628107000189,\n            \"Cargo_Representante\": \"DIRETORA PRESIDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"assefaz@assefaz.org.br\",\n            \"Fax\": 32180105,\n            \"Logradouro\": \"SCS QD. 4 BLOCO A ED. ASSEFAZ\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"FUNDAÇÃO ASSEFAZ\",\n            \"Numero\": \"1\",\n            \"Razao_Social\": \"FUNDAÇÃO ASSISTENCIAL DOS SERVIDORES DO MINISTÉRIO DA FAZENDA\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 346926,\n            \"Representante\": \"GILDENORA BATISTA DANTAS\",\n            \"Telefone\": 32180100,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"OCTOGONAL SUL\",\n            \"CEP\": 70660900,\n            \"CNPJ\": 3658432000182,\n            \"Cargo_Representante\": \"DIRETOR-PRESIDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"TR.B 3º ANDAR\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1998-12-22\",\n            \"Endereco_eletronico\": \"ans@geap.com.br\",\n            \"Logradouro\": \"TERRAÇO SHOPPING SHC-AO SUL, EA 02/08 LO\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"GEAP\",\n            \"Numero\": \"05\",\n            \"Razao_Social\": \"GEAP AUTOGESTÃO EM SAÚDE\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 323080,\n            \"Representante\": \"DOUGLAS VICENTE FIGUEREDO\",\n            \"Telefone\": 21034569,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"GUARA\",\n            \"CEP\": 71250115,\n            \"CNPJ\": 26032244000140,\n            \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"Zona Industrial (Guará),\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2017-01-18\",\n            \"Endereco_eletronico\": \"diretoria@planoidealsaude.com.br\",\n            \"Logradouro\": \"Setor SCIA Quadra 14 Conjunto 3\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"IDEAL SAÚDE\",\n            \"Numero\": \"LOTE 03\",\n            \"Razao_Social\": \"IDEAL SAÚDE ASSISTÊNCIA MÉDICA AMBULATORIAL LTDA\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 420751,\n            \"Representante\": \"WILMA SALVIANO DE MEDEIROS MATOS\",\n            \"Telefone\": 32421250,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA NORTE\",\n            \"CEP\": 70040911,\n            \"CNPJ\": 32692296000145,\n            \"Cargo_Representante\": \"Sócio Administrador\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"EDIFÍCIO VIA CAPITAL\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2019-06-21\",\n            \"Endereco_eletronico\": \"gestao@administradoraintegral.com.br\",\n            \"Logradouro\": \"SETOR SBN QD 02 BLOCO F SALA 413\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"INTEGRAL SAÚDE\",\n            \"Numero\": \"BLOCO F\",\n            \"Razao_Social\": \"INTEGRAL ADMINISTRADORA DE BENEFÍCIOS LTDA.\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": 421839,\n            \"Representante\": \"ROULIEN ROBSON DO ESPÍRITO SANTO FERREIRA\",\n            \"Telefone\": 37022272,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA NORTE\",\n            \"CEP\": 70730630,\n            \"CNPJ\": 11828089000103,\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"BLOCO C, LOJA 48\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2012-01-12\",\n            \"Endereco_eletronico\": \"negocios@evida.org.br\",\n            \"Logradouro\": \"SETOR DE HABITAÇÕES COLETIVAS GEMINADAS \",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"LUMINAR SAÚDE\",\n            \"Numero\": \"QUADRA 704/705\",\n            \"Razao_Social\": \"LUMINAR SAÚDE - ASSOCIAÇÃO DE ASSISTÊNCIA À SAÚDE\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 418374,\n            \"Representante\": \"JORGE EDUARDO BRAGA NETO\",\n            \"Telefone\": 39668300,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70070938,\n            \"CNPJ\": 2751464000165,\n            \"Cargo_Representante\": \"DIRETORA GERAL\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"ED. VICTORIA OFFICE TOWER\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1998-12-16\",\n            \"Endereco_eletronico\": \"odontogroup@odontogroup.com.br\",\n            \"Fax\": 8007043663,\n            \"Logradouro\": \"SAUS QUADRA 04 - BL. A\",\n            \"Modalidade\": \"Odontologia de Grupo\",\n            \"Nome_Fantasia\": \"ODONTOGROUP\",\n            \"Numero\": \"SALAS 1101/1112\",\n            \"Razao_Social\": \"ODONTOGROUP SISTEMA DE SAÚDE LTDA.\",\n            \"Regiao_de_Comercializacao\": 3,\n            \"Registro_ANS\": 389854,\n            \"Representante\": \"ANA REGINA MARTINS CERQUEIRA SALGADO\",\n            \"Telefone\": 30386011,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70340906,\n            \"CNPJ\": 11792899000149,\n            \"Cargo_Representante\": \"ADMINISTRADORA\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"TÉRREO II, SALA 112\",\n            \"Data_Registro_ANS\": \"2013-08-01\",\n            \"Endereco_eletronico\": \"gleciana@platinumbeneficios.com.br\",\n            \"Logradouro\": \"SRTVS QUADRA 701, CONJUNTO L, BLOCO 02\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Numero\": \"38\",\n            \"Razao_Social\": \"PLATINUM ADMINISTRADORA DE BENEFICIOS\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 418986,\n            \"Representante\": \"GLECIANA SILVA VIEIRA\",\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"AGUAS CLARAS \",\n            \"CEP\": 71950770,\n            \"CNPJ\": 47432143000136,\n            \"Cargo_Representante\": \"SOCIO - ADMINISTRADOR\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"SALA 312\",\n            \"Data_Registro_ANS\": \"2023-01-18\",\n            \"Endereco_eletronico\": \"DIRETORIA@PLENUMSAUDE.COM\",\n            \"Logradouro\": \"QS 1 RUA 210 TORRE 03 - LOTE 34/36\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"PLENUM SAUDE \",\n            \"Numero\": \"S/N\",\n            \"Razao_Social\": \"PLENUM ASSISTENCIA MEDICA  LTDA\",\n            \"Registro_ANS\": 423441,\n            \"Representante\": \"LUCIO ANTUNES ALVES \",\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70312970,\n            \"CNPJ\": 18275071000162,\n            \"Cargo_Representante\": \"DIRETOR PRESIDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"BLOCO B,  nº 2 - Ed. TELEX - 1º e 2º and\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2013-09-25\",\n            \"Endereco_eletronico\": \"ans@postalsaude.com.br\",\n            \"Logradouro\": \"SHS\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"POSTAL SAÚDE\",\n            \"Numero\": \"QUADRA 2 \",\n            \"Razao_Social\": \"POSTAL SAÚDE CAIXA DE ASSISTÊNCIA E SAÚDE DOS EMPREGADOS DOS CORREIOS\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 419133,\n            \"Representante\": \"ELI PINTO DE MELO JÚNIOR\",\n            \"Telefone\": 34256777,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70200710,\n            \"CNPJ\": 2752923000125,\n            \"Cargo_Representante\": \"DIRETOR GERAL\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"SGAS MOD. 75/76\",\n            \"DDD\": 51,\n            \"Data_Registro_ANS\": \"1998-12-18\",\n            \"Endereco_eletronico\": \"secretaria.proasa@proasa.org.br\",\n            \"Fax\": 33457778,\n            \"Logradouro\": \"AV L3 SUL\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"ADVENTIST HEALTH\",\n            \"Numero\": \"611\",\n            \"Razao_Social\": \"PROASA - PROGRAMA ADVENTISTA DE SAÚDE\",\n            \"Regiao_de_Comercializacao\": 3,\n            \"Registro_ANS\": 310522,\n            \"Representante\": \"GILNEI VIVEIRO DE ABREU\",\n            \"Telefone\": 33451818,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70340906,\n            \"CNPJ\": 9433795000104,\n            \"Cargo_Representante\": \"ADMINISTRADOR\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"BLOCO 01, Nº 38, LOJAS 10 e 20, BLOCO 02\",\n            \"Data_Registro_ANS\": \"2011-08-15\",\n            \"Endereco_eletronico\": \"dir.quallity@quallityprosaude.com.br\",\n            \"Fax\": 30444408,\n            \"Logradouro\": \"SRTVS QD 701 CONJUNTO L \",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"QUALLITY PRÓ SAÚDE\",\n            \"Numero\": \"38\",\n            \"Razao_Social\": \"QUALLITY PRÓ SAÚDE PLANO DE ASSISTÊNCIA MÉDICA LTDA.\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 418170,\n            \"Representante\": \"MISAEL ALVES DA SILVA\",\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70303907,\n            \"CNPJ\": 27113113000150,\n            \"Cargo_Representante\": \"DIRETORA\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"1º AND SL. 101 ED. ANTONIA A. P. DE SOUS\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2017-11-27\",\n            \"Endereco_eletronico\": \"Raquel@s1saude.com.br\",\n            \"Logradouro\": \"SCS QUADRA 03 BLOCO A\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"S1 SAÚDE\",\n            \"Numero\": \"107\",\n            \"Razao_Social\": \"S1 OPERADORA DE PLANO DE SAÚDE LTDA\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 420981,\n            \"Representante\": \"RAQUEL SILVA ESPIRITO SANTO DE SOUSA\",\n            \"Telefone\": 32215300,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA NORTE\",\n            \"CEP\": 70040250,\n            \"CNPJ\": 4859814000137,\n            \"Cargo_Representante\": \"DIRETORA SUPERINTENDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"LOTE C,  TORRE B,  3º ANDAR - CENTRO EMP\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2002-05-07\",\n            \"Endereco_eletronico\": \"diretorsuperintendente@saudebrb.com.br\",\n            \"Fax\": 30359440,\n            \"Logradouro\": \"SETOR DE AUTARQUIAS NORTE \",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"SAÚDE BRB\",\n            \"Numero\": \"QUADRA 5\",\n            \"Razao_Social\": \"SAÚDE BRB - CAIXA DE ASSISTÊNCIA \",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 414310,\n            \"Representante\": \"ELIANE DE FÁTIMA MONTEIRO\",\n            \"Telefone\": 33251666,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"TAGUATINGA\",\n            \"CEP\": 72035513,\n            \"CNPJ\": 10495931000161,\n            \"Cargo_Representante\": \"Representante\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"LOTES 17,18 E 19 TERREO\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2010-11-04\",\n            \"Endereco_eletronico\": \"pedro.lima@servixsaude.com.br\",\n            \"Logradouro\": \"QUADRA CSG\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"SERVIX\",\n            \"Numero\": \"13\",\n            \"Razao_Social\": \"SERVIX ADMINISTRADORA DE BENEFÍCIOS LTDA\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 417602,\n            \"Representante\": \"IVONETE PIRES DE MORAIS ALECRIM\",\n            \"Telefone\": 32989000,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA NORTE\",\n            \"CEP\": 70836900,\n            \"CNPJ\": 33683111000107,\n            \"Cargo_Representante\": \"REPRESENTANTE\",\n            \"Cidade\": \"Brasília\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1998-12-22\",\n            \"Endereco_eletronico\": \"geoffrey.cordeiro@serpro.gov.br\",\n            \"Fax\": 20217768,\n            \"Logradouro\": \"SGAN QUADRA 601 - MÓDULO \\\"V\\\" - 1º ANDAR \",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"SERPRO\",\n            \"Numero\": \"601\",\n            \"Razao_Social\": \"SERVIÇO FEDERAL DE PROCESSAMENTO DE DADOS (SERPRO)\",\n            \"Regiao_de_Comercializacao\": 1,\n            \"Registro_ANS\": 345474,\n            \"Representante\": \"TIAGO VIANA BASTOS\",\n            \"Telefone\": 20218402,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70392900,\n            \"CNPJ\": 3657699000155,\n            \"Cargo_Representante\": \"DIRETOR DE PLANO DE SAÚDE\",\n            \"Cidade\": \"Brasília\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"1998-12-28\",\n            \"Endereco_eletronico\": \"saude@unafiscosaude.org.br\",\n            \"Logradouro\": \"SDS CONJUNTO BARACAT, 1º ANDAR SALAS 1 A\",\n            \"Modalidade\": \"Autogestão\",\n            \"Nome_Fantasia\": \"SINDIFISCO NACIONAL\",\n            \"Numero\": \"11\",\n            \"Razao_Social\": \"SINDIFISCO NACIONAL - SINDICATO NACIONAL DOS AUDITORES-FISCAIS DA RECEITA FEDERAL DO BRASIL\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 361011,\n            \"Representante\": \"ADRIANO LIMA CORRÊA\",\n            \"Telefone\": 21035205,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"ASA SUL\",\n            \"CEP\": 70351550,\n            \"CNPJ\": 8056815000102,\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Brasília\",\n            \"DDD\": 61,\n            \"Data_Registro_ANS\": \"2006-12-26\",\n            \"Endereco_eletronico\": \"benecap@benecap.com.br\",\n            \"Fax\": 33483422,\n            \"Logradouro\": \"SCRS  QD 508 BLOCO B LOJA 25\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"BENECAP SAUDE\",\n            \"Numero\": \"25\",\n            \"Razao_Social\": \"SOCIEDADE BENECAP DE ASSISTÊNCIA À SAÚDE\",\n            \"Regiao_de_Comercializacao\": 4,\n            \"Registro_ANS\": 415898,\n            \"Representante\": \"WALTER PAES LANDIM RIBEIRO\",\n            \"Telefone\": 33483400,\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"Brasília\",\n            \"CEP\": 44088180,\n            \"CNPJ\": 42524911000168,\n            \"Cargo_Representante\": \"Sócio administrador\",\n            \"Cidade\": \"Feira de Santana\",\n            \"Complemento\": \"sala 02\",\n            \"DDD\": 71,\n            \"Data_Registro_ANS\": \"2021-11-22\",\n            \"Endereco_eletronico\": \"contato@solidusadministradora.com.br\",\n            \"Logradouro\": \"Rua Monsenhor Aderbal Miranda\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Nome_Fantasia\": \"SOLIDUS ADMINISTRADORA DE BENEFICIOS\",\n            \"Numero\": \"875\",\n            \"Razao_Social\": \"SOLIDUS ADMINISTRADORA DE BENEFICIOS E SOLUCOES EM SAUDE LTDA\",\n            \"Registro_ANS\": 423068,\n            \"Representante\": \"SIDNEY SILVA SANTOS\",\n            \"Telefone\": 34865825,\n            \"UF\": \"BA\"\n        },\n        {\n            \"Bairro\": \"BRASÍLIA\",\n            \"CEP\": 58700350,\n            \"CNPJ\": 8315806000180,\n            \"Cargo_Representante\": \"PRESIDENTE\",\n            \"Cidade\": \"Patos\",\n            \"DDD\": 83,\n            \"Data_Registro_ANS\": \"1998-12-21\",\n            \"Endereco_eletronico\": \"gerencia@unimedpatos.com.br\",\n            \"Fax\": 34215557,\n            \"Logradouro\": \"AV DOUTOR PEDRO FIRMINO\",\n            \"Modalidade\": \"Cooperativa Médica\",\n            \"Nome_Fantasia\": \"UNIMED PATOS\",\n            \"Numero\": \"295\",\n            \"Razao_Social\": \"UNIMED PATOS - COOPERATIVA DE TRABALHO MÉDICO\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": 336467,\n            \"Representante\": \" AUGUSTO MARCIO DE MELLO E SILVA SOARES\",\n            \"Telefone\": 34214111,\n            \"UF\": \"PB\"\n        },\n        {\n            \"Bairro\": \"ÁGUAS CLARAS \",\n            \"CEP\": 71953000,\n            \"CNPJ\": 46426569000114,\n            \"Cargo_Representante\": \"SOCIO ADMINISTRADOR\",\n            \"Cidade\": \"Brasília\",\n            \"Complemento\": \"LOTES 3  5  7 E 9  - SALAS 1701 A 1716 -\",\n            \"Data_Registro_ANS\": \"2022-10-03\",\n            \"Endereco_eletronico\": \"marcia.rodrigues@unitysaude.com.br\",\n            \"Logradouro\": \"QS 3 EPCT \",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"UNITY SAÚDE\",\n            \"Numero\": \"SN\",\n            \"Razao_Social\": \"UNITY SERVIÇOS INTEGRADOS DE SAÚDE LTDA.\",\n            \"Registro_ANS\": 423335,\n            \"Representante\": \"DULIO CESAR LOPES SANTANA\",\n            \"UF\": \"DF\"\n        },\n        {\n            \"Bairro\": \"JARDIM BRASÍLIA\",\n            \"CEP\": 42803001,\n            \"CNPJ\": 3773153000160,\n            \"Cargo_Representante\": \"ADMINISTRADOR\",\n            \"Cidade\": \"Camaçari\",\n            \"DDD\": 71,\n            \"Data_Registro_ANS\": \"2000-12-15\",\n            \"Endereco_eletronico\": \"ouvidoria@nordestesaude.com.br\",\n            \"Logradouro\": \"AVENIDA CONCÊNTRICA\",\n            \"Modalidade\": \"Medicina de Grupo\",\n            \"Nome_Fantasia\": \"NORDESTE SAÚDE EMPRESARIAL\",\n            \"Numero\": \"04\",\n            \"Razao_Social\": \"TERRAMAR ADMINISTRADORA DE PLANO DE SAUDE LTDA\",\n            \"Regiao_de_Comercializacao\": 5,\n            \"Registro_ANS\": 412759,\n            \"Representante\": \"ELÁDIO GALDINO VILELA DE SOUZA\",\n            \"Telefone\": 31866106,\n            \"UF\": \"BA\"\n        }\n    ],\n    \"status\": 200\n}"
+				}
+			]
+		},
+		{
+			"name": "Razao_Social",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/search?q=18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Razao_Social",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/search?q=18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.1.3 Python/3.13.2"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Mar 2025 20:44:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "850"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"query\": \"18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA\",\n    \"results\": [\n        {\n            \"Bairro\": \"PRAÇA DA BANDEIRA\",\n            \"CEP\": 36660000,\n            \"CNPJ\": 19541931000125,\n            \"Cargo_Representante\": \"SÓCIO ADMINISTRADOR\",\n            \"Cidade\": \"Além Paraíba\",\n            \"DDD\": 32,\n            \"Data_Registro_ANS\": \"2015-05-19\",\n            \"Endereco_eletronico\": \"contabilidade@cbnassessoria.com.br\",\n            \"Logradouro\": \"RUA CAPITÃO MEDEIROS DE REZENDE\",\n            \"Modalidade\": \"Administradora de Benefícios\",\n            \"Numero\": \"274\",\n            \"Razao_Social\": \"18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA\",\n            \"Regiao_de_Comercializacao\": 6,\n            \"Registro_ANS\": 419761,\n            \"Representante\": \"LUIZ HENRIQUE MARENDINO GONÇALVES\",\n            \"Telefone\": 34624649,\n            \"UF\": \"MG\"\n        }\n    ],\n    \"status\": 200\n}"
+				}
+			]
+		}
+	]
+}
