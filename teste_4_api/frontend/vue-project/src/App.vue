@@ -1,47 +1,75 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div id="app">
+    <header>
+      <h1>Consulta de Operadoras</h1>
+    </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <SearchBox v-model="searchQuery" @search="performSearch" />
+    <SearchStats v-if="hasSearched" :query="lastQuery" :count="results.length" />
 
-  <main>
-    <TheWelcome />
-  </main>
+    <section class="results-container">
+      <Loading v-if="loading" />
+      <NoResults v-else-if="results.length === 0 && hasSearched" :query="lastQuery" />
+      
+      <div v-else class="results-list">
+        <OperadoraCard 
+          v-for="(operadora, index) in results" 
+          :key="index" 
+          :operadora="operadora"
+          :expanded="expandedIndex === index"
+          @toggle="toggleDetails(index)"
+        />
+      </div>
+    </section>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script>
+import SearchBox from './components/SearchBox.vue';
+import SearchStats from './components/SearchStats.vue';
+import OperadoraCard from './components/OperadoraCard.vue';
+import Loading from './components/Loading.vue';
+import NoResults from './components/NoResults.vue';
+import apiService from './components/apiService';
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+export default {
+  name: 'App',
+  components: { SearchBox, SearchStats, OperadoraCard, Loading, NoResults },
+  data() {
+    return {
+      searchQuery: '',
+      results: [],
+      loading: false,
+      lastQuery: '',
+      hasSearched: false,
+      expandedIndex: null,
+    };
+  },
+  methods: {
+    async performSearch() {
+      if (this.searchQuery.length < 3) return;
+
+      this.loading = true;
+      this.lastQuery = this.searchQuery;
+      this.hasSearched = true;
+
+      try {
+        this.results = await apiService.search(this.searchQuery);
+      } catch (error) {
+        console.error('Erro na busca:', error);
+        this.results = [];
+      } finally {
+        this.loading = false;
+      }
+    },
+    toggleDetails(index) {
+      this.expandedIndex = this.expandedIndex === index ? null : index;
+    }
   }
+};
+</script>
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+<style>
+@import './assets/global.css';
 </style>

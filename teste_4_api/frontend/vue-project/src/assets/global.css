@@ -1,0 +1,175 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20 px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+.search-container {
+  margin-bottom: 30px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 0 20px;
+  background-color: #42b983;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #3a9e70;
+}
+
+.search-stats {
+  font-size: 14px;
+  color: #666;
+}
+
+.loading, .no-results {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.results-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+  gap: 20px;
+}
+
+.operadora-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.operadora-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #39546e;
+  margin: 0;
+}
+
+.modalidade {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.card-details {
+  margin-top: 15px;
+}
+
+.card-details h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #423838;
+}
+
+.toggle-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #9bc1cc;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #e9ecef;
+}
+
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+  .results-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .search-box {
+    flex-direction: column;
+  }
+  
+  .search-button {
+    padding: 12px;
+  }
+}

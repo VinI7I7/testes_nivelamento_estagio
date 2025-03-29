@@ -5,5 +5,4 @@ class Config:
     
     DATA_PATH = r'data\Relatorio_cadop.csv'  
     
-    # Lista de encodings para tentar ao carregar o CSV
     ENCODINGS = ['utf-8', 'latin-1']
