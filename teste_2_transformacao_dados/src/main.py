@@ -9,7 +9,7 @@ def main():
     base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     input_pdf = os.path.join(base_dir, 'data', 'Anexo_I_Rol_2021RN_465.2021_RN627L.2024.pdf')
     output_csv = os.path.join(base_dir, 'data', 'tabela_rol.csv')
-    output_zip = os.path.join(base_dir, 'data', 'vinicius_ribeiro.zip')
+    output_zip = os.path.join(base_dir, 'data', 'Teste_vinicius_ribeiro.zip')
 
     try:
 
