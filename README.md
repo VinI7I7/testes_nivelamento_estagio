@@ -55,8 +55,10 @@ Sistema de processamento e análise de dados da ANS.
 cd teste_3_banco_de_dados
 python src/main.py
 ```
+2.1 Serão baixados e processados todos os csv necessários para executar os scripts sql
+
 3. Execute os scripts SQL em `src/scripts/`
-Obs: Atente-se ao caminho para importar os dados
+Obs: Atente-se ao caminho do arquivo csv para importar os dados
 
 ### 4. API  (teste_4_api)
 Sistema de consulta de operadoras com interface web.
