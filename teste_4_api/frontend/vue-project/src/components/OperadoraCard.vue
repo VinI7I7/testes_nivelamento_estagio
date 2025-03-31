@@ -2,7 +2,7 @@
     <div class="operadora-card" @click="toggle">
       <div class="card-header">
         <h3>{{ operadora.Razao_Social || 'Nome não disponível' }}</h3>
-        <span class="modalidade">{{ operadora.Modalidade || 'N/A' }}</span>
+        <span class="tag">{{ operadora.Modalidade || 'N/A' }}</span>
       </div>
   
       <div class="card-body">
