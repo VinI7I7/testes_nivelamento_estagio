@@ -17,7 +17,7 @@ def extract_all_zips():
         extract_path = os.path.join(EXTRACT_FOLDER, os.path.splitext(zip_file)[0])
 
         if os.path.exists(extract_path) and os.listdir(extract_path):
-            print(f"Arquivo já extraído: {zip_file}, pulando...")
+            print(f"Arquivo já extraído: {zip_file}")
             continue
 
         os.makedirs(extract_path, exist_ok=True)
