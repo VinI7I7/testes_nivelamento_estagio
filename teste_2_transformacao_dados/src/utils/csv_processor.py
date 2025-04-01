@@ -2,8 +2,8 @@ import pandas as pd
 
 def replace_abbreviations(df):
     od_map = {
-        'OD': 'Segmentação Odontológica',
-        'AMB': 'Segmentação Ambulatorial'
+        'OD': 'Seg. Odontológica',
+        'AMB': 'Seg. Ambulatorial'
     }
     
     for col in df.columns:
