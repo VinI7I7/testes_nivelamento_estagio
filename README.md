@@ -1,94 +1,111 @@
-## Teste de nivelamento estágio
+# Teste de Nivelamento - Estágio
 
+## Tecnologias Utilizadas
 
-## Requisitos Gerais
+- **Linguagens**: Python 3, JavaScript (Node.js)
+- **Banco de Dados**: PostgreSQL 17
+- **Frameworks**: Flask (backend), Vue.js (frontend)
 
-- Python 3.x
-- PostgreSQL (para teste_3)
-- Node.js e npm (para teste_4)
+---
 
-### Instalação das Dependências Python
+## Instalação das Dependências
+
+### **Dependências Python**
 ```bash
 pip install -r requirements.txt
 ```
 
-### Instalação das Dependências Frontend (teste_4)
+### **Dependências do Frontend (Teste 4)**
 ```bash
 cd teste_4_api/frontend/vue-project
 npm install
 ```
 
-## Projetos
+---
 
-### 1. Web Scraping (teste_1_web_scraping)
-Download e compactação de PDFs do site da ANS.
+## Estrutura do Projeto
 
+Cada teste está contido em uma pasta separada e deve ser executado na ordem recomendada abaixo.
+
+### **1. Web Scraping (teste_1_web_scraping)**
+Este teste realiza o download de PDFs do site da ANS e os compacta em um arquivo ZIP.
+
+#### **Execução**
 ```bash
 cd teste_1_web_scraping
 python src/main.py
 ```
 
-Saída: 
-- PDFs baixados em `data/`
-- Arquivo ZIP em `data/anexos.zip`
+#### **Saída**
+- PDFs baixados na pasta `data/`
+- Arquivo ZIP salvo em `data/anexos.zip`
 
-### 2. Transformação de Dados (teste_2_transformacao_dados)
-Extração de dados de PDF para CSV.
+---
 
-1. Coloque o PDF na pasta `data/`
+### **2. Transformação de Dados (teste_2_transformacao_dados)**
+Este teste extrai dados de PDFs e os converte para CSV.
+
+#### **Passos**
+1. Coloque o PDF na pasta `data/`  (não é necessário caso tenha executado o Teste 1).
 2. Execute:
 ```bash
 cd teste_2_transformacao_dados
 python src/main.py
 ```
 
-Saída:
-- CSV em `data/tabela_rol.csv`
-- ZIP em `data/vinicius_ribeiro.zip`
+#### **Saída**
+- Arquivo CSV gerado em `data/tabela_rol.csv`
+- Arquivo ZIP salvo em `data/vinicius_ribeiro.zip`
 
-### 3. Banco de Dados (teste_3_banco_de_dados)
-Sistema de processamento e análise de dados da ANS.
+---
 
-1. Configure o PostgreSQL
+### **3. Banco de Dados (teste_3_banco_de_dados)**
+Este teste processa e analisa os dados extraídos no PostgreSQL.
+
+#### **Passos**
+1. Configure o PostgreSQL e crie o banco de dados.
 2. Execute:
 ```bash
 cd teste_3_banco_de_dados
 python src/main.py
 ```
-2.1 Serão baixados e processados todos os csv necessários para executar os scripts sql
+3. Serão baixados e processados os CSVs necessários.
+4. Execute os scripts SQL em `src/scripts/`.
+---
 
-3. Execute os scripts SQL em `src/scripts/`
-Obs: Atente-se ao caminho do arquivo csv para importar os dados
+### **4. API e Interface Web (teste_4_api)**
+Este teste implementa um sistema de consulta de operadoras com interface web.
 
-### 4. API  (teste_4_api)
-Sistema de consulta de operadoras com interface web.
+#### **Execução**
 
-Terminal 1 (Backend):
+##### **Backend**
 ```bash
 cd teste_4_api/backend
 python main.py
 ```
 
-Terminal 2 (Frontend):
+##### **Frontend**
 ```bash
 cd teste_4_api/frontend/vue-project
 npm run dev
 ```
 
-Acesse: http://localhost:XXXX
-Obs: Acesse a porta que for mostrada
+Acesse a interface web em: [http://localhost:5173](http://localhost:5173) (ou a porta exibida no terminal).
+
+---
 
 ## Estrutura de Dados
 
-### Pasta data/
-Cada projeto cria sua própria pasta caso ela nao exista `data/` para armazenar:
+Cada projeto cria sua própria pasta `data/` para armazenar:
 - PDFs baixados
 - Arquivos CSV gerados
 - Arquivos ZIP
 - Dados temporários
 
-## Observações
 
-- Certifique-se de ter todas as dependências instaladas
-- Alguns testes dependem de arquivos gerados por outro teste então utilize sequencialmente
-- Todos os dados são obtidos de fontes públicas da ANS
+## Observações
+- Certifique-se de instalar todas as dependências antes de rodar os testes.
+- Alguns testes dependem de arquivos gerados em etapas anteriores.
+- Todos os dados processados são de fontes públicas da ANS.
+
+---
