@@ -1,11 +1,8 @@
 # Teste de Nivelamento - Estágio
 
-## Introdução
-Este repositório contém um conjunto de testes que avaliam habilidades em web scraping, processamento de dados, manipulação de banco de dados e desenvolvimento de APIs. O projeto utiliza Python, PostgreSQL e Vue.js para construir um pipeline de processamento de dados da ANS.
-
 ## Tecnologias Utilizadas
 
-- **Linguagens**: Python 3.x, JavaScript (Node.js)
+- **Linguagens**: Python 3, JavaScript (Node.js)
 - **Banco de Dados**: PostgreSQL 17
 - **Frameworks**: Flask (backend), Vue.js (frontend)
 
@@ -105,17 +102,6 @@ Cada projeto cria sua própria pasta `data/` para armazenar:
 - Arquivos ZIP
 - Dados temporários
 
----
-
-## Ordem Recomendada de Execução
-| Passo | Descrição |
-|-------|----------|
-| 1 | Executar Web Scraping para baixar os PDFs |
-| 2 | Rodar a transformação de dados para extrair e gerar CSV |
-| 3 | Configurar PostgreSQL e processar os dados |
-| 4 | Subir o backend e frontend da API |
-
----
 
 ## Observações
 - Certifique-se de instalar todas as dependências antes de rodar os testes.
